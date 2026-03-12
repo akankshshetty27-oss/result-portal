@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS Result Portal</title>
+
+<style>
+
+body{
+font-family: Arial;
+background: linear-gradient(to right,#1e3c72,#2a5298);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:10px;
+width:400px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+text-align:center;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px 20px;
+background:#1e3c72;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.result{
+margin-top:20px;
+display:none;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #ddd;
+padding:8px;
+}
+
+th{
+background:#1e3c72;
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>CS Result Portal</h2>
+
+<input type="text" id="roll" placeholder="Enter Roll Number">
+
+<button onclick="showResult()">Check Result</button>
+
+<div class="result" id="resultBox">
+
+<h3>CS Examination Session : June 2025</h3>
+<p><b>Name:</b> AKANKSH PADMANABHA SHETTY</p>
+<p><b>Roll Number:</b> 155117</p>
+<p><b>Result:</b> Pass</p>
+
+<table>
+
+<tr>
+<th>Subject</th>
+<th>Marks</th>
+</tr>
+
+<tr>
+<td>Jurisprudence, Interpretation and General Laws</td>
+<td>56</td>
+</tr>
+
+<tr>
+<td>Company Law and Practice</td>
+<td>47</td>
+</tr>
+
+<tr>
+<td>Setting up of Business, Industrial and Labour Laws</td>
+<td>53</td>
+</tr>
+
+<tr>
+<td>Corporate Accounting and Financial Management</td>
+<td>65</td>
+</tr>
+
+<tr>
+<td><b>Total</b></td>
+<td><b>221</b></td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script>
+
+function showResult(){
+
+var roll=document.getElementById("roll").value;
+
+if(roll=="155117"){
+document.getElementById("resultBox").style.display="block";
+}else{
+alert("Result not found");
+}
+
+}
+
+</script>
+
+</body>
+  </html>
